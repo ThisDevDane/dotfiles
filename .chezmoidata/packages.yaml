@@ -1,0 +1,10 @@
+packages:
+  linux:
+    - 'git'
+    - 'nvim'
+    - 'google-chrome'
+    - '1password-cli'
+    - 'fuzzel'
+    - 'lazygit'
+    - 'lazydocker'
+    - 'k9s'

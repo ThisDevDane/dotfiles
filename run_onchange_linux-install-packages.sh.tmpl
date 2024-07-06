@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+{{ range .packages.linux -}}
+yes | paru -S {{ . }}
+{{ end -}}
+
+{{ end -}}
