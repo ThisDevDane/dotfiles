@@ -2,7 +2,7 @@
 #!/bin/bash
 
 {{ range .packages.linux -}}
-yes | paru -S {{ . }}
+yes | paru -S {{ . }} --needed
 {{ end -}}
 
 {{ end -}}
