@@ -1,11 +1,33 @@
 packages:
   linux:
+    # cli tools
     - 'git'
-    - 'nvim'
-    - 'google-chrome'
+    - 'fzf'
+    - 'ripgrep'
+    - 'neovim'
     - '1password-cli'
     - 'fuzzel'
     - 'lazygit'
     - 'lazydocker'
-    - 'k9s'
     - 'oh-my-posh'
+    - 'zoxide'
+    - 'fd'
+    - 'jq'
+    - 'yq'
+    - 'vivid'
+    - 'asdf-vm'
+    - 'curl'
+    - 'btop'
+    - 'doggo'
+    - 'nmap'
+    - 'net-tools'
+    - 'dnsutils'
+
+    # desktop apps
+    - 'google-chrome'
+    - 'bcompare'
+
+    # devtools
+    - 'go'
+    - 'k9s'
+    - 'docker'
