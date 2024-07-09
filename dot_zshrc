@@ -2,11 +2,11 @@
 source /usr/share/zinit/zinit.zsh
 
 # Load plugins
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
-zinit light zsh-users/zsh-history-substring-search
+zinit load zsh-users/zsh-syntax-highlighting
+zinit load zsh-users/zsh-completions
+zinit load zsh-users/zsh-autosuggestions
+zinit load Aloxaf/fzf-tab
+zinit load zsh-users/zsh-history-substring-search
 
 # Load snippts
 zinit snippet OMZP::kubectl
@@ -24,6 +24,7 @@ zinit cdreplay -q
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
 
 # History
+mkdir -p ~/.local/state/zsh
 HISTSIZE=5000
 HISTFILE=~/.local/state/zsh/history
 SAVEHIST=5000
