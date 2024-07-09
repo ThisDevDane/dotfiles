@@ -17,6 +17,7 @@ packages:
     - 'fuzzel'
     - 'fd'
     - 'jq'
+    - 'zinit'
 
     # cli tools
     - 'lazydocker'
