@@ -20,6 +20,8 @@ packages:
     - 'zinit'
     - 'p7zip'
     - 'just'
+    - 'luarocks'
+    - 'python3'
 
     # cli tools
     - 'lazydocker'
@@ -37,3 +39,4 @@ packages:
     - 'go'
     - 'k9s'
     - 'docker'
+    - 'rustup'
