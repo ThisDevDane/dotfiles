@@ -19,6 +19,7 @@ packages:
     - 'jq'
     - 'zinit'
     - 'p7zip'
+    - 'just'
 
     # cli tools
     - 'lazydocker'
