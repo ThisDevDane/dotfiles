@@ -40,3 +40,8 @@ packages:
     - 'k9s'
     - 'docker'
     - 'rustup'
+
+    # random hyprland deps
+    - 'meson'
+    - 'cpio'
+    - 'hyprwayland-scanner'
