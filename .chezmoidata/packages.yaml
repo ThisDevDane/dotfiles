@@ -22,6 +22,7 @@ packages:
     - 'just'
     - 'luarocks'
     - 'python3'
+    - 'base-devel'
 
     # cli tools
     - 'lazydocker'
@@ -34,6 +35,7 @@ packages:
     # desktop apps
     - 'google-chrome'
     - 'bcompare'
+    - '1password'
 
     # devtools
     - 'go'
