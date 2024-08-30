@@ -1,20 +1,20 @@
 # Source zinit
 source /usr/share/zinit/zinit.zsh
 
-# Load plugins
-zinit load zsh-users/zsh-syntax-highlighting
-zinit load zsh-users/zsh-completions
-zinit load zsh-users/zsh-autosuggestions
-zinit load Aloxaf/fzf-tab
-zinit load zsh-users/zsh-history-substring-search
-
 # Load snippts
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::asdf
 zinit snippet OMZP::common-aliases
-zinit snippet OMZP::minikube
+zinit snippet OMZP::git
+zinit snippet OMZP::dotenv
+
+# Load plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 
 # Load completions
 autoload -U compinit && compinit
@@ -37,6 +37,15 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Key bindings
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
+bindkey "^[[1;5C" forward-word # Ctrl + Right
+bindkey "^[[1;5D" backward-word # Ctrl + Left
+bindkey '^[[H' beginning-of-line # Home
+bindkey '^[[F' end-of-line # End
+
 # Completion style
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
@@ -46,6 +55,11 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls -A --color $realpath'
 
 # Aliases
 alias ls="ls --color"
+alias vim='nvim'
+
+# Defaults
+export EDITOR=nvim
+export PATH=$PATH:$HOME/go/bin
 
 # Shell integations
 eval "$(fzf --zsh)"

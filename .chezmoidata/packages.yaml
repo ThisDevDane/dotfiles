@@ -23,6 +23,7 @@ packages:
     - 'luarocks'
     - 'python3'
     - 'base-devel'
+    - 'cmake'
 
     # cli tools
     - 'lazydocker'
