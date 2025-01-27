@@ -34,7 +34,7 @@ packages:
     - 'dnsutils'
 
     # desktop apps
-    - 'google-chrome'
+    - 'brave-bin'
     - 'bcompare'
     - '1password'
 
@@ -43,8 +43,3 @@ packages:
     - 'k9s'
     - 'docker'
     - 'rustup'
-
-    # random hyprland deps
-    - 'meson'
-    - 'cpio'
-    - 'hyprwayland-scanner'
