@@ -61,6 +61,10 @@ alias vim='nvim'
 export EDITOR=nvim
 export PATH=$PATH:$HOME/go/bin
 
+# asdf version manager
+export ASDF_DATA_DIR="$HOME/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
+
 # Shell integations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)" 
