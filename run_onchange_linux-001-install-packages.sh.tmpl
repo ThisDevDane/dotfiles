@@ -1,8 +1,0 @@
-{{ if eq .chezmoi.os "linux" -}}
-#!/bin/bash
-
-{{ range .packages.linux -}}
-yes | yay -S {{ . }} --needed
-{{ end -}}
-
-{{ end -}}
